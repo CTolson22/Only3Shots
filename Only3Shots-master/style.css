@@ -1,12 +1,47 @@
 
-body {
-background-image: url(../Only3Shots-master/images/189-1893697_melting-vinyl-record-png-image-free-melting-vinyl.png);
-background-repeat: no-repeat;
-background-position: center;
-background-attachment: fixed;
+    #slide-bg  {
+        width: 100%;
+        height: 600vh;
+        position: absolute;
+        color: black;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        backface-visibility: hidden;
+        animation: slidebg  linear infinite 0s ;
+        animation-duration:  35s;
+        animation-delay: 0s;
+        animation-timing-function: ease-in-out;
+        background-image: url(../Only3Shots-master/images/Black\ White\ Acoustic\ Album\ Cover.PNG);
+    }
+    
+    @keyframes slidebg{
+        0% {
+            background-image: url(../Only3Shots-master/images/Black\ White\ Acoustic\ Album\ Cover.PNG);
+        }
+    
+        25% {
+            background-image: url(../Only3Shots-master/images//IMG-1070.JPG);
+        
+        } 
+    
+        50% {
+            background-image: url(../Only3Shots-master/images/IMG-1071.JPG);
+        }
+    
+        75% {
+            background-image: url(../Only3Shots-master/images/Pink\ Feminine\ Acoustic\ Album\ Cover.PNG);
+        }
+    
+        100% {
+            background-image: url(../Only3Shots-master/images/o3slogo.jpg);
+        }
+    }
 
 
-}
+
+
+
 
 .fadeInRight{
     animation-duration: 30s;
@@ -14,43 +49,21 @@ background-attachment: fixed;
     animation-iteration-count: 1;
     animation-fill-mode: both;
     font-family: 'Fredericka the Great', cursive;
-    color: red;
+    color: rgb(77, 1, 1);
+    background-color: transparent;
     font-size: 200px;
     position: relative;
-    background-color:transparent ;
+    
     margin-bottom: 100px;
     padding-bottom: 20px;
-    padding-top: 40px;
+    padding-top: 40px; 
 }
-
-.slide-container{
-    width: 800px;
-    height: 600px;
-    text-align: center;
-}
-
-.image-container{
-    width: 2400px;
-    height:600px;
-    position: relative;
-    transition: left 2s;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -o-transition: left 2s ;
-}
-
-.slider-image{
-    float: left;
-    margin: 0px;
-    padding: 0px;
-}
-
 
 
 #story{
-    
+    width: 100%;
     padding:20px 50px 10px 80px;
-    color: red;
+    color:rgb(77, 1, 1);
     font-size: 25px;
     margin-bottom: 150px;
     margin-top: 250px;
@@ -66,9 +79,9 @@ margin-bottom: 60px;
 
 #ceo{
     border:8px;
-    
+    width: 100%;
     padding:20px 50px 10px 80px;
-    color:rgba(0, 0, 179, 0.904);
+    color:whitesmoke;
     font-size: 25px;
     margin-bottom: 350px;
     font-family: 'Italiana', serif;
@@ -84,8 +97,8 @@ margin-bottom: 60px;
 
 
 #artist{
-    
-    color: red;
+    width: 100%;
+    color:whitesmoke;
     font-size: 20px;
     margin-bottom: 250px;
     
@@ -102,10 +115,10 @@ margin-bottom: 60px;
 
 
 #contact{
-    width: 50px;
+    width: 50%;
     height: 75px;
     padding:20px 50px 10px 80px;
-    color:red;
+    color:whitesmoke;
     font-size: 20px;
     margin-top: 250px ;
 }
@@ -113,6 +126,68 @@ margin-bottom: 60px;
 footer{
     margin-top: 250px;
 }
+
+@media only screen and (min-width: 768px){
+
+
+.fadeInRight{
+
+    font-size: 50px;
+    position: relative;
+    
+    margin-bottom: auto;
+    padding-bottom: 20px;
+    padding-top: 40px; 
+}
+
+
+#story{
+    
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+
+
+#ceo{
+    border:8px;
+    width: 100%;
+    padding:20px 50px 10px 80px;
+    color:whitesmoke;
+    font-size: 25px;
+    margin-bottom: 350px;
+    font-family: 'Italiana', serif;
+}
+
+
+
+
+
+#artist{
+    width: 100%;
+    color:whitesmoke;
+    font-size: 20px;
+    margin-bottom: 250px;
+    
+}
+
+
+}
+
+
+
+
+#contact{
+    width: 50%;
+    height: 75px;
+    padding:20px 50px 10px 80px;
+    color:whitesmoke;
+    font-size: 20px;
+    margin-top: 250px ;
+}
+
+
+
 
 
 
